@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left_border {
+  border: 0.5px solid #bbbfbf;
+}
+.right_border {
+  border: 0.5px solid #bbbfbf;
+}
+.input_field {
+  border: 1px solid #d5d9d9;
+}
+.sign_input {
+  border: 1px solid #c2c6c6;
+}
+
+.sign_in_anchor:hover {
+  color: rgb(251, 72, 72);
+  text-decoration: underline;
+}
