@@ -1,5 +1,8 @@
 import React from "react";
 import { IoAlert } from "react-icons/io5";
+import { BiCaretRight } from "react-icons/bi";
+import { CgCopyright } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -61,6 +64,83 @@ const Signup = () => {
               <br /> apply.
             </p>
           </div>
+          <div className="text-center mt-1">
+            <button
+              className="bg-amber-300 border border-gray-950 rounded-md text-sm py-1 hover:bg-amber-400"
+              style={{ width: "320px" }}
+            >
+              Continue
+            </button>
+          </div>
+          <div className="mt-4" style={{ fontSize: "13px" }}>
+            <h3 className="flex flex-row gap-1">
+              Already have an account?{" "}
+              <Link to="/signin">
+                <span className="flex flex-row">
+                  <a href="/" className="sign_in_anchor text-sky-600">
+                    Sign in{" "}
+                  </a>
+                  <BiCaretRight className="mt-1 text-sky-600" />
+                </span>
+              </Link>
+            </h3>
+            <h3 className="flex flex-row gap-1">
+              Buying for work?
+              <Link to="/">
+                <span className="flex flex-row">
+                  <a href="/" className="sign_in_anchor text-sky-600">
+                    Create a free business account
+                  </a>
+                  <BiCaretRight className="mt-1 text-sky-600" />
+                </span>
+              </Link>
+            </h3>
+          </div>
+          <div className="mt-3 " style={{ fontSize: "13px" }}>
+            <h3>
+              By creating an account or logging in, you agree to <br /> Amazon’s
+              <a href="/" className="sign_in_anchor text-sky-600">
+                {" "}
+                Conditions of Use
+              </a>{" "}
+              and{" "}
+              <a href="/" className="sign_in_anchor text-sky-600">
+                {" "}
+                Privacy Policy.
+              </a>{" "}
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="my-3">
+        <hr />
+      </div>
+
+      <div className="container mx-auto flex flex-col gap-2">
+        <div
+          className="flex flex-row gap-3 items-center mx-auto"
+          style={{ fontSize: "12px" }}
+        >
+          <a href="/" className="sign_in_anchor text-sky-600">
+            {" "}
+            Condition of Use
+          </a>
+          <a href="/" className="sign_in_anchor text-sky-600">
+            Privacy Notice
+          </a>
+          <a href="/" className="sign_in_anchor text-sky-600">
+            Help
+          </a>
+        </div>
+        <div className="mx-auto text-sm flex flex-row gap-1 ">
+          <CgCopyright className="mt-1 text-gray-500" />
+          <span
+            className="text-sm text-gray-500 tracking-wide"
+            style={{ fontSize: "12px" }}
+          >
+            1996-2023,Amazon.com,Inc. or its affiliates
+          </span>
         </div>
       </div>
     </>

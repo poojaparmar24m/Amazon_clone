@@ -1,13 +1,14 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import "../../Css/style.css";
 
 const Search = () => {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="input-group rounded-md" style={{ width: "750px" }}>
+      <div className="flex items-center justify-center px-1">
+        <div className="input-group rounded-md Navbar_input">
           <span className="input-group-text bg-gray-200 p-0 ">
-            <select className="form-select border-none bg-gray-200 pl-0 text-center focus:border-none shadow-none">
+            <select className="form-select border-none bg-gray-200 text-center focus:border-none shadow-none">
               <option selected>All</option>
               <option value="Books">Books</option>
               <option value="Furniture">Furniture</option>

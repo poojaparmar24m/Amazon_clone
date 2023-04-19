@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import "../../Css/style.css";
 
 const Location = () => {
@@ -15,15 +16,15 @@ const Location = () => {
   }
   return (
     <>
-      <div className="flex items-start">
+      <div className="flex 2xl:flex xl:flex lg:flex md:flex sm:hidden items-start location_lg">
         <button
           type="button"
           onClick={openModal}
           //   className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
         >
           <div className=" items-start flex flex-col p-0 m-0">
-            <span className="ml-8  mb-0 text-sm text-white">Hello</span>
-            <p className="flex items-center gap-1 p-0 m-0 text-white">
+            <span className="ml-8 text-sm text-white">Hello</span>
+            <p className="flex items-center  text-white text-sm md:text-sm">
               <span>
                 {" "}
                 <HiOutlineLocationMarker
@@ -31,6 +32,26 @@ const Location = () => {
                 />
               </span>
               Select your address
+            </p>
+          </div>
+        </button>
+      </div>
+
+      <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden sm:flex items-start location_sm">
+        <button
+          type="button"
+          onClick={openModal}
+          //   className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        >
+          <div className=" items-start flex flex-col p-0 m-0">
+            <p className="flex items-center gap-1 p-0 m-0 text-white text-sm">
+              <span>
+                {" "}
+                <HiOutlineLocationMarker
+                  style={{ height: "25px", width: "25px", color: "white" }}
+                />
+              </span>
+              Select a location to see product availability
             </p>
           </div>
         </button>
@@ -74,9 +95,12 @@ const Location = () => {
                       Select a delivery location to see product availability and
                       delivery options
                     </p>
-                    <button className="bg-amber-300 cursor-pointer text-center rounded-lg px-5 py-1 ">
-                      sign in to see your addresses
-                    </button>
+                    <Link to="/signin">
+                      <button className="bg-amber-300 cursor-pointer text-center rounded-lg px-5 py-1 ">
+                        sign in to see your addresses
+                      </button>
+                    </Link>
+
                     <div className="flex items-center gap-2">
                       <div className="left_border w-16"></div>
                       or enter an Indian pincode
@@ -103,7 +127,6 @@ const Location = () => {
                         className="border border-gray-300 rounded-md outline-none px-2 p-1 w-full text-sm "
                         style={{ backgroundColor: "#F0F2F2" }}
                       >
-                        <option>Deliver outside India</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="Sri Lanka">Sri Lanka</option>
                       </select>

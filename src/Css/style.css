@@ -20,3 +20,128 @@
   color: rgb(251, 72, 72);
   text-decoration: underline;
 }
+
+.outer_box:hover {
+  border: 1px solid white;
+}
+
+.Navbar_input {
+  width: 750px;
+}
+.footer_text:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1482px) {
+  .Navbar_input {
+    width: 740px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .Navbar_input {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Navbar_input {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .Navbar_input {
+    width: 350px;
+  }
+  .navbar_lg {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .Navbar_input {
+    display: none;
+  }
+}
+
+/* Location media query */
+@media only screen and (max-width: 640px) {
+  .location_sm {
+    display: flex;
+  }
+  .location_lg {
+    display: none;
+  }
+  .footer_sm {
+    display: flex;
+  }
+  .footer_lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Navbar_lg {
+    display: none;
+  }
+  .Navbar_sm {
+    display: flex;
+  }
+  .navbar_md {
+    display: none;
+  }
+  .product_navbar {
+    display: none;
+  }
+  .productCarosel_Lg {
+    display: none;
+  }
+  .productCarosel_md {
+    display: none;
+  }
+  .productCarosel_sm {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  top: 40%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product_slider {
+    margin-top: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product_slider {
+    margin-top: 370px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .product_slider {
+    margin-top: 330px;
+    left: -3px;
+  }
+  .product_slide_img {
+    width: 200px;
+    height: 130px;
+  }
+  .prodcut_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1;
+  }
+  .product_main_div {
+    left: -2px;
+  }
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productInfo {
+    width: 100%;
+  }
+}

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Productnavbar from "../components/ProductNavbar/Productnavbar";
 import Footer from "../components/Footer/Footer";
 
-const DefaultLayout =
+const ProductLayout =
   (Component) =>
   ({ ...props }) => {
     return (
@@ -16,4 +16,4 @@ const DefaultLayout =
     );
   };
 
-export default DefaultLayout;
+export default ProductLayout;
