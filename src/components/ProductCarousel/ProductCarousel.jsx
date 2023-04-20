@@ -36,7 +36,7 @@ const ProductCarousel = () => {
         "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/BVD-Apr/Deals-3000-Unrec-PC._CB591758540_.jpg",
     },
   ]);
-
+  console.log(setCaroselimage);
   const settings = {
     dots: false,
     arrows: true,
